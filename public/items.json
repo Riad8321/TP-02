@@ -1,0 +1,17 @@
+[
+  {
+    "item_name": "apple",
+    "quantity": 3,
+    "item_cost": 3.99
+  },
+  {
+    "item_name": "strawberry",
+    "quantity": 1,
+    "item_cost": 5.99
+  },
+  {
+    "item_name": "Orange",
+    "quantity": 2,
+    "item_cost": 4.99
+  }
+]
