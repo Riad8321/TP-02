@@ -1,4 +1,4 @@
-#TP02
+#TP-02
 
 # TP-02
 ## Shopping list
