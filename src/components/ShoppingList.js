@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
+
 const ShoppingList = (props) => {
     // TODO : créer un state pour stocker la liste d items
     const [shopping, setShopping] = useState([]);
@@ -12,17 +13,18 @@ const ShoppingList = (props) => {
             .then(fetchedItems => {
                 // TODO: enregistrer les items dans le state
                 return setShopping(fetchedItems)
-                console.log(fetchedItems)
+                // console.log(fetchedItems)
+
             })
     }, [])
 
     return (
-        <div>
+        <div className='shopping-list'>
             <h2>{props.title}</h2>
             <ul>
                 {shopping.map(shopping => {
                     return (
-                        <li>
+                        <li key={shopping.item_name}>
                             {shopping.item_name} - Quantity {shopping.quantity} - Price {shopping.item_cost}
                         </li>
                     )
@@ -31,6 +33,7 @@ const ShoppingList = (props) => {
 
             </ul>
         </div>
+
     )
 }
 
